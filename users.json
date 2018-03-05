@@ -42,4 +42,26 @@
     "Email": "aaa@admin.com",
     "IsReviewer": true,
     "IsAdmin": true
+},
+{
+    "Id": 5,
+    "FirstName": "bbb",
+    "LastName": "bbb",
+    "UserName": "bbb",
+    "Password": "bbb",
+    "Phone": "bbb",
+    "Email": "bbb",
+    "IsReviewer": "true",
+    "IsAdmin": "true"
+},
+{
+    "Id": 6,
+    "FirstName": "ccc",
+    "LastName": "ccc",
+    "UserName": "ccc",
+    "Password": "ccc",
+    "Phone": "ccc",
+    "Email": "ccc",
+    "IsReviewer": "true",
+    "IsAdmin": "true"
 }]
