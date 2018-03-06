@@ -40,7 +40,7 @@ $().ready(function() {
 
     $("#chg").click(function() {
         var user = {
-          Id: $("#idx").val(),
+          Id: Number($("#idx").val()),
           FirstName: $("#firstname").val(),
           LastName: $("#lastname").val(),
           UserName: $("#username").val(),

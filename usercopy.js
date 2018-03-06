@@ -1,5 +1,5 @@
 module.exports = function(fromUser, toUser) {
-    toUser.Id = fromUser.Id;    
+    //toUser.Id = +fromUser.Id;    
     toUser.UserName = fromUser.UserName;
     toUser.Password = fromUser.Password;
     toUser.FirstName = fromUser.FirstName;

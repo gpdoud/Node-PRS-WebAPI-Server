@@ -38,11 +38,11 @@ module.exports = function() {
   
   // change(user) function
   this.change = function(user) {
-    var user2 = this.get(user.Id);
+    var user2 = this.get(+user.Id);
     if(user2 == null) {
       return new jsonrc(204, "ERROR", "Not found.")
     }
-    usercopy(user, user2);
+    usercopy(user, user2.data);
     this.flush();
     return new jsonrc(200, "OK", null);
   }
