@@ -4,11 +4,13 @@ This is a JSON WebAPI server written in Node. It is used for providing a service
 
 ## Instruction
 
-To use prs-webapi-server the first time, the data store needs to be initialized. This must only be done once. This can also be done to clear all the existing data from the data store.
+It is convenient to setup a script to start the server rather than typing a long command. Open the package.json file and add a line to the `scripts` key:
 
-`npm run initialize`
+`"start": "node node_modules/prs-webapi-server/server.js"`
 
-To run the service, at the root of the project, type:
+Make sure to include an ending command if this is not the last script.
+
+Now start the server with: 
 
 `npm start`
 
