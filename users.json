@@ -1,0 +1,13 @@
+[
+  {
+    "Id": 1,
+    "UserName": "admin",
+    "Password": "admin",
+    "FirstName": "Super",
+    "LastName": "Admin",
+    "Phone": "513-555-1212",
+    "Email": "super@admin.com",
+    "IsReviewer": true,
+    "IsAdmin": true
+  }
+]

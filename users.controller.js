@@ -20,10 +20,7 @@ var user = {
   // constructor function
 
   const FS = require("fs-extra");
-  if(!FS.ensureFileSync("users.json")) {
-    console.log("file not found - creating it.");
-    writejson.sync("users.json", user);
-  }
+  // FS.ensureFileSync("users.json");
   var users_raw = FS.readFileSync("users.json");
   this.users = JSON.parse(users_raw);
   
