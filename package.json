@@ -9,6 +9,10 @@
   },
   "author": "Greg Doud",
   "license": "ISC",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/gpdoud/Node-PRS-WebAPI-Server.git"
+  },
   "dependencies": {
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
