@@ -1,12 +1,32 @@
 module.exports = function() { 
 
+var user = {
+  "Id": 1,
+  "UserName": "sa",
+  "Password": "sa",
+  "FirstName": "Super",
+  "LastName": "Admin",
+  "Phone": "513-555-1212",
+  "Email": "sa@admin.com",
+  "IsReviewer": true,
+  "IsAdmin": true
+}
+
   const usercopy = require("./usercopy.js");
   const jsonrc = require("./jsonrc.js");
 
+  var writejson = require("write-json");
+
   // constructor function
-  const FS = require("fs");
+
+  const FS = require("fs-extra");
+  if(!FS.ensureFileSync("users.json")) {
+    console.log("file not found - creating it.");
+    writejson.sync("users.json", user);
+  }
   var users_raw = FS.readFileSync("users.json");
   this.users = JSON.parse(users_raw);
+  
 
   // flush function
   this.flush = function() {
