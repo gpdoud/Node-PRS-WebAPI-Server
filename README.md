@@ -4,6 +4,10 @@ This is a JSON WebAPI server written in Node. It is used for providing a service
 
 ## Instruction
 
+To use prs-webapi-server the first time, the data store needs to be initialized. This must only be done once. This can also be done to clear all the existing data from the data store.
+
+`npm run initialize`
+
 To run the service, at the root of the project, type:
 
 `npm start`
