@@ -1,6 +1,6 @@
 {
   "name": "prs-webapi-server",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Provides a JSON WebAPI server for PRS data",
   "main": "server.js",
   "scripts": {
