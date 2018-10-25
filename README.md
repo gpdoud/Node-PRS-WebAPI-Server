@@ -25,6 +25,7 @@ This starts the server on port 5000. In the browser URL, type:
 * /Users/Create - add a User (User object in body)
 * /Users/Change - change a User (User object in body)
 * /users/Remove - remove a User (User object in body)
+* /users/Auth/username/password - authenticate a User
 
 ## Data returned
 
