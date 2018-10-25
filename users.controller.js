@@ -42,7 +42,7 @@ var user = {
         return new jsonrc(200, "OK", user);
       }
     }
-    return null;
+    return new jsonrc(204, "Not found", null);
   }
   
   // create(user) function
@@ -78,5 +78,15 @@ var user = {
     }
     this.flush();
     return new jsonrc(200, "OK", null);
+  }
+
+  // auth() function (login)
+  this.auth = function(username, password) {
+    for(user of this.users) {
+      if(user.UserName === username && user.Password === password) {
+        return new jsonrc(200, "Authenticated!", user);
+      }
+    }
+    return new jsonrc(204, "No user with that name/password", null);
   }
 }

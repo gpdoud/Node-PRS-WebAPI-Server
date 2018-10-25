@@ -38,6 +38,12 @@ app.post("/Users/Remove", upload.array(), (req, res, next) => {
   res.send(usersCtrl.remove(req.body));
 });
 
+app.get("/Users/Auth/:username/:password", (req, res) => {
+  var username = req.params.username;
+  var password = req.params.password;
+  res.send(usersCtrl.auth(username, password));
+});
+
 var server = app.listen(5000, () => {
-  console.log("Node server running on 5000 ...");
+  console.log("PRS server running on 5000 ...");
 });
